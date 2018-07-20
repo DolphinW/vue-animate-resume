@@ -1,6 +1,6 @@
 # vue-animate-resume
 
-> 动态简历历
+> 动态简历
 
 ## Build Setup
 

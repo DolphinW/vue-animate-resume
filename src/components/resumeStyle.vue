@@ -1,5 +1,5 @@
 <template>
-  <div  class="resume-container" >
+  <div  class="resume-container" ref="container">
     <div v-html="textStyleContainer"></div>
     <pre v-html="styleText"></pre>
   </div>
@@ -23,7 +23,12 @@
       styleText(){
         return Prism.highlight(this.code, Prism.languages.css);
       }
-    }
+    },
+    methods: {
+      goBottom() {
+        this.$refs.container.scrollTop = 100000
+      }
+    },
   }
 </script>
 
